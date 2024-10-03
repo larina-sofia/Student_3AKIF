@@ -12,6 +12,30 @@ public class Student
        setReligion(neuReligion);
        setMatura(neuMatura);
     }
+    
+    public Student(String neuName, int neuAlter, String neuReligion)
+    {
+        setName(neuName);
+        setAlter(neuAlter);
+        setReligion(neuReligion);
+        setMatura(false);
+    }
+    
+    public Student(String neuName)
+    {
+        setName(neuName);
+        setAlter(14);
+        setReligion("ob");
+        setMatura(false);
+    }
+    
+    public Student()
+    {
+        setName("UNKN");
+        setAlter(14);
+        setReligion("ob");
+        setMatura(false);
+    }
 
     public void setName(String neuName)
     {
@@ -57,5 +81,4 @@ public class Student
     {
         System.out.println(name + ":_" + alter + "_Jahre,_Rel:_" + religion + ",_Matura:_" + matura);
     }
-
 }
